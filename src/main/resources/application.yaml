@@ -1,0 +1,31 @@
+server:
+  port: 6767
+  address: 127.0.0.1
+
+name: wangjian
+# 对象
+person:
+  name: wangjianTest
+  address:
+    - beijing
+    - shanghai
+  age: 88
+
+# 对象行内写法
+person1: {name: Test,age: 88}
+
+# 数组
+address:
+  - beijing
+  - shanghai
+
+# 数组的行内写法
+address1: [nanjing,tianjing]
+
+# 纯量
+msg1: 'hello \n world'
+msg2: "hello \n world"
+
+# 参数引用
+person3:
+  name: ${name} #引用上面定义的name值
